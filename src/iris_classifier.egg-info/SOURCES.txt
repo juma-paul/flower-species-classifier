@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/iris_classifier.egg-info/PKG-INFO
+src/iris_classifier.egg-info/SOURCES.txt
+src/iris_classifier.egg-info/dependency_links.txt
+src/iris_classifier.egg-info/requires.txt
+src/iris_classifier.egg-info/top_level.txt
