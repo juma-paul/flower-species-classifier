@@ -1,0 +1,29 @@
+name: CI Pipeline
+
+on:
+    push:
+        branches: [ main ]
+    pull_request:
+        branches: [ main ]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+steps: 
+    - name: Checkout code
+      uses: actiona/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '13.3'
+    
+    - name: Install uv
+      uses: pip install uv
+    
+    - name: Install dependencies
+      uses: uv sync
+
+    - name: Run tests
+      uses: uv run pytest tests/ -v
