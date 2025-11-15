@@ -1,0 +1,13 @@
+{
+    "duplicates_removed": 1,
+    "column_types": {
+        "numeric": 5,
+        "categorical": 0,
+        "datetime": 0
+    },
+    "missing_values_handled": 0,
+    "outliers_capped": 4,
+    "invalid_rows_removed": 0,
+    "final_rows": 149,
+    "final_cols": 5
+}
