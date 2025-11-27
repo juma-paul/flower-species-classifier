@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import io
 
-API_URL = st.secrets('API_URL')
+API_URL = st.secrets["API_URL"]
 
 st.set_page_config(page_title="Iris Classifier", page_icon="⚜️", layout="wide")
 
@@ -175,7 +175,7 @@ with right_col:
                     payload = {"feature_list": batch_data}
                     
                     try:
-                        response = requests.post("{API_URL}/predict-batch", json=payload)
+                        response = requests.post(f"{API_URL}/predict-batch", json=payload) 
                         
                         if response.status_code == 200:
                             predictions = response.json()
