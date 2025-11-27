@@ -13,3 +13,4 @@ confusion_matrix.png
 *.egg-info/
 ml_project_dev_process.md
 .dockerignore
+.pytest_cache/
