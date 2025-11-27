@@ -52,5 +52,5 @@ jobs:
                   sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/iris-classifier:latest
                   sudo docker stop iris-api || true
                   sudo docker rm iris-api || true
-                  sudo docker run -d --name iris-api --restart=always -p 80:8000 ${{ secrets.DOCKERHUB_USERNAME }}/iris-classifier:latest
+                  sudo docker run -d --name iris-api --network monitoring --restart=always -p 80:8000 ${{ secrets.DOCKERHUB_USERNAME }}/iris-classifier:latest
                 EOF
