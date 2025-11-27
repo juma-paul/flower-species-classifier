@@ -42,7 +42,7 @@ st.markdown("""
 
 # Header
 st.markdown('<p class="main-title">Iris Species Classifier</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-title">ML model for iris flower classification</p>')
+st.markdown('<p class="sub-title">ML model for iris flower classification</p>', unsafe_allow_html=True)
 st.divider()
 
 # Model Performance Metrics
