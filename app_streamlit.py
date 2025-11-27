@@ -11,14 +11,14 @@ st.set_page_config(page_title="Iris Classifier", page_icon="⚜️", layout="wid
 st.markdown("""
     <style>
     .main-title {
-        font-size: 3.5rem;
-        font-weight: 600;
-        color: #1e3a8a;
-        margin-bottom: 0.5rem;
+        font-size: 3.5rem !important;
+        font-weight: 600 !important;
+        color: #1e3a8a !important;
+        margin-bottom: 0.5rem !important;
     }
     .sub-title {
-        font-size: 1.1rem;
-        color: #64748b;
+        font-size: 1.1rem !important;
+        color: #64748b !important;
     }
     .metric-card {
         background-color: #f8fafc;
@@ -42,7 +42,8 @@ st.markdown("""
 
 # Header
 st.markdown('<p class="main-title">Iris Species Classifier</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-title">ML model for iris flower classification</p>', unsafe_allow_html=True)
+st.markdown('<p class="sub-title">The model classifies flowers into Setosa, Versicolor, or Virginica based on sepal and petal dimensions.<br>Enter flower measurements to accurately identify iris species.</p>', unsafe_allow_html=True)
+
 st.divider()
 
 # Model Performance Metrics
@@ -202,4 +203,4 @@ with right_col:
 
 # Footer
 st.divider()
-st.caption("Built with Streamlit • FastAPI • Deployed on AWS EC2")
+st.caption("Built with Streamlit • FastAPI • Deployed on Streamlit Community Cloud")
